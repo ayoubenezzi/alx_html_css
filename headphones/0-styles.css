@@ -1,0 +1,219 @@
+/* POINTS TO NOTE */
+/* links hover/active #FF6565 */
+/* button hover/active: opacity: 0.9
+ */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/source-sans-pro/SourceSansPro-Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/source-sans-pro/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/source-sans-pro/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/source-sans-pro/SourceSansPro-Regular.otf);
+    font-weight: 400;
+}
+ 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'alaSource Sans Pro';
+    /* border: 1px solid red; */
+}
+
+/*###DESKTOP###*/
+/* HEADER SECTION */
+header {
+    background: url('./images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    gap: 50vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 80vw;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 53px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section-two-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+header .section-two-header p {
+    text-align: center;
+    width: 637px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-title h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: center;
+}
+
+button {
+    color: #fff;
+    background-color: #ff6565;
+    border-radius: 24px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+/*####TABLET######*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+
+    /* HEADER SECTION */
+    header {
+        height: 80vh;
+        gap: 30vh;
+    }
+    
+    nav {
+        margin-top: 29px;
+        width: 85vw;
+    }
+
+    nav ul {
+        gap: 35px;
+    }
+
+    .header-title h1 {
+        line-height: 40.22px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+
+/*###MOBILE###*/
+@media screen and (max-width: 480px) {
+    /* HEADER SECTION */
+    header {
+        background-position:35%;
+        height: 100vh;
+        gap: 30vh;
+    }
+    nav {
+        margin-top: 29px;
+        width: 100vw;
+        justify-content: flex-start;
+        gap: 66px;
+    }
+
+    nav .menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        
+    }
+    nav .menu-icon {
+        display: block;
+    }
+    nav .logo-image {
+        width: 237px;
+    }
+
+    header .section-two-header p {
+        width: 335px;
+    }
+
+
+    button {
+        color: #fff;
+        background-color: #ff6565;
+        border-radius: 24px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    button:hover, button:active {
+        opacity: 0.9;
+    }
+}
+
+/* STYLE TO BE USED EVERYWHERE ON */
+a:link {
+    color:#fff;
+}
+
+a:hover {
+    color: #ff6565;
+}
+
+a:active {
+    color: #ff6565;
+}
+
